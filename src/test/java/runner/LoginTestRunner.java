@@ -9,7 +9,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="C:\\Users\\Rasheed\\workspace\\bddsample\\src\\main\\java\\feature\\login.feature",
 		glue={"loginStepDef"},
-		dryRun=false
+		dryRun=false,
+		monochrome=true,
+		strict=true,
+		format={"pretty","html:test-output"}
 		)
 
 public class LoginTestRunner {
