@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="C:\\Users\\Rasheed\\workspace\\bddsample\\src\\main\\java\\feature\\login.feature",
-		glue={"loginStepDef"}
+		glue={"loginStepDef"},
+		dryRun=false
 		)
 
 public class LoginTestRunner {
